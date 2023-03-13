@@ -10,7 +10,7 @@ This work is based on our paper. We proposed a new framework to explore and sear
 
 Visual target navigation in unknown environments is a crucial problem in robotics. Despite extensive investigation of classical and learning-based approaches in the past, robots lack common-sense knowledge about household objects and layouts. Prior state-of-the-art approaches to this task rely on learning the priors during the training and typically require significant expensive resources and time for  learning. To address this, we propose a new framework for visual target navigation that leverages Large Language Models (LLM) to impart common sense for object searching. Specifically, we introduce two paradigms: (i) zero-shot and (ii) feed-forward approaches that use language to find the relevant frontier from the semantic map as a long-term goal and explore the environment efficiently. Our analysis demonstrates the notable zero-shot generalization and transfer capabilities from the use of language. Experiments on Gibson and Habitat-Matterport 3D (HM3D) demonstrate that the proposed framework significantly outperforms existing map-based methods in terms of success rate and generalization. Ablation analysis also indicates that the common-sense knowledge from the language model leads to more efficient semantic exploration. Finally, we provide a real robot experiment to verify the applicability of our framework in real-world scenarios. The supplementary video and code can be accessed via the following link: https://sites.google.com/view/l3mvn.
 
-![image-20200706200822807](img/system.jpg)
+![image-20200706200822807](img/system.png)
 
 <!-- ## Requirements
 
@@ -63,7 +63,7 @@ python -m habitat_sim.utils.datasets_download --username <api-token-id> --passwo
 
 3. Download additional datasets
 
-Download the [segmentation model]() in RedNet/model path, and [matterport_category_mappings.tsv]() [object_norm_inv_perplexity.npy]() in data path.
+Download the [segmentation model]() in RedNet/model path.
 
 
 ## Setup

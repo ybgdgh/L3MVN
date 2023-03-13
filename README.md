@@ -63,7 +63,7 @@ python -m habitat_sim.utils.datasets_download --username <api-token-id> --passwo
 
 3. Download additional datasets
 
-Download the [segmentation model]() in RedNet/model path.
+Download the [segmentation model](https://drive.google.com/file/d/1U0dS44DIPZ22nTjw0RfO431zV-lMPcvv/view?usp=share_link) in RedNet/model path.
 
 
 ## Setup

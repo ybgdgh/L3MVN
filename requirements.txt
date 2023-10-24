@@ -3,3 +3,5 @@ scikit-learn==0.22.2.post1
 scikit-image==0.15.0
 numpy>=1.20.2
 ifcfg
+transformers==4.23.1
+tensorboard

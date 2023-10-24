@@ -20,7 +20,7 @@ Visual target navigation in unknown environments is a crucial problem in robotic
 
 ## Installation
 
-The code has been tested only with Python 3.7, CUDA 10.nvcc on Ubuntu 20.04.
+The code has been tested only with Python 3.7 on Ubuntu 20.04.
 
 1. Installing Dependencies
 - We use challenge-2022 versions of [habitat-sim](https://github.com/facebookresearch/habitat-sim) and [habitat-lab](https://github.com/facebookresearch/habitat-lab) as specified below:
@@ -41,17 +41,13 @@ cd habitat-lab; git checkout tags/challenge-2022;
 pip install -e .
 ```
 
-- Install [pytorch](https://pytorch.org/) according to your system configuration. The code is tested on pytorch v1.6.0 and cudatoolkit v10.2. If you are using conda:
+- Install [pytorch](https://pytorch.org/) according to your system configuration. The code is tested on pytorch v1.7.0 and cudatoolkit v11.4. If you are using conda:
 ```
-conda install pytorch==1.6.0 torchvision==0.7.0 cudatoolkit=10.2 #(Linux with GPU)
-conda install pytorch==1.6.0 torchvision==0.7.0 -c pytorch #(Mac OS)
+conda install pytorch==1.7.0 torchvision==0.8.1 cudatoolkit=11.4 #(Linux with GPU)
+conda install pytorch==1.7.0 torchvision==0.8.1 -c pytorch #(Mac OS)
 ```
 
-- Install [detectron2](https://github.com/facebookresearch/detectron2/) according to your system configuration. If you are using conda:
-```
-python -m pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu102/torch1.6/index.html #(Linux with GPU)
-CC=clang CXX=clang++ ARCHFLAGS="-arch x86_64" python -m pip install 'git+https://github.com/facebookresearch/detectron2.git' #(Mac OS)
-```
+- Install [detectron2](https://github.com/facebookresearch/detectron2/) according to your system configuration. 
 
 2. Download HM3D datasets:
 
@@ -77,7 +73,7 @@ pip install -r requirements.txt
 ### Setting up datasets
 The code requires the datasets in a `data` folder in the following format (same as habitat-lab):
 ```
-Object-Goal-Navigation/
+L3MVN/
   data/
     scene_datasets/
     matterport_category_mappings.tsv
